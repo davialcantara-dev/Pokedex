@@ -42,7 +42,10 @@ function createPokemonCard(pokemon) {
     const poke_types= pokemon.types.map(el => el.type.name);
     const type = main_types.find(type => poke_types.indexOf(type) > -1);
     const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
+    const color = colors[type];
 
+    pokemonEl.style.backgroundColor = color;
+    
     const pokeInnerHTML = `
     <div class="img-container">
        <img src="https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png"/>
