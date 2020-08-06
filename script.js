@@ -13,6 +13,7 @@ const colors = {
     dragon: '#97b3e6',
     psychic:'#eaeda1',
     flying: '#E6E0D4',
+    fighting: '#E6E0D4',
     normal: '#F5F5F5'
 };
 
